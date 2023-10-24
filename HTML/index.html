@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGO YO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/eurostile-round-extended.otf">
+    <link rel="stylesheet" href="./fonts/HalvarBreit-Lt/HalvarBreit-Lt.woff2">
+</head>
+
+<body>
+    <header class="header">
+        <div class='container'>
+            <div class="header_main">
+                <a href="/"> <img src="./img/LOGO YO.svg" alt=""></a>
+                <ul class="header__wrapper">
+                    <a href="#">
+                        <li class="header__list">
+                            Автомобили
+                        </li>
+                    </a>
+                    <a href="#by_car">
+                        <li class="header__list">
+                            Покупка авто
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="header__list">
+                            Личная охрана
+                        </li>
+                    </a>
+                    <a href="#carousel">
+                        <li class="header__list">
+                            Клубные карты
+                        </li>
+                    </a>
+                </ul>
+                <div class="header__icons" style="display: flex; gap: 20px; margin-right: 40px;">
+                    <img src="./img/ic_outline-telegram.svg" alt="">
+                    <img src="./img/mdi_instagram.svg" alt="">
+                </div>
+                <div class="button">
+                    <button>Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class='container'>
+                <div class="good_section">
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <div class="good_text">
+                            <h1>Стань частью <br>клуба Logo yo</h1>
+
+                            <p>
+                                Узнайте о преимуществах наших Клубных карт для аренды авто. Эксклюзивные предложения,
+                                бесплатные дни и многое другое ждут вас. Присоединяйтесь к клубу уже сегодня!
+                            </p>
+                        </div>
+                        <button id="showPicturesButton">Выбрать карту</button>
+                    </div>
+
+                    <div id="pictureContainer" class="hidden">
+                        <div class="hImg">
+                            <div class="hImgchilds">
+                                <img src="./img/Group 2.svg" alt="Image 2">
+
+                                <img src="./img/Group 5.svg" alt="Image 3">
+                            </div>
+                            <div class="hImgchilds">
+                                <img src="./img/Group 18.svg" alt="Image 1">
+
+                                <div class="last-child"><img src="./img/Group 8.svg" alt="Image 4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="by_car">
+            <div class="container">
+                <div class="car">
+                    <div class="car_text">
+                        <h1>Персональные условия по тарифам только для владельцев клубной карты</h1>
+                    </div>
+                    <ul>
+                        <li>
+                            <img width="1425px" src="./img/Line 1.png" alt="">
+                        </li>
+                        <li>
+                            <p>Rolls-Royce Wraith</p>
+                            <img src="./img/image 6.svg" alt="">
+                            <h4 style="text-decoration: line-through;">79.000 руб/сутки</h4>
+                            <h2>49.000 руб/сутки</h2>
+                        </li>
+                        <li>
+                            <p>Mercedes - Benz G</p>
+                            <img src="./img/image 7.svg" alt="">
+                            <h4 style="text-decoration: line-through;">54.000 руб/сутки</h4>
+                            <h2>49.000 руб/сутки</h2>
+                        </li>
+                        <li>
+                            <p>Dodge Challenger SRT</p>
+                            <img src="./img/image 11.svg" alt="">
+                            <h4 style="text-decoration: line-through;">20.000 руб/сутки</h4>
+                            <h2>11.900 руб/сутки</h2>
+                        </li>
+                        <div class="cricle">
+                            <h1>20+</h1>
+                            <p>автомобилей в аренду со скидкой до 40%</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card_panel">
+            <div class="card__text">
+                <h1>Выберите подходящую карту</h1>
+                <p>Выберите идеальную карту, соответствующую вашим потребностям. Получите эксклюзивные привилегии и
+                    выгоды при аренде автомобиля. Наслаждайтесь комфортом и удобством с нашими клубными картами.</p>
+            </div>
+            <!--  -->
+            <div id="carousel" style="position: relative;">
+                <div id="image-container">
+                    <div class="carousel">
+                        <img class="carousel-image" src="./img/Group 18.svg" alt="Image 1">
+
+                        <img class="carousel-image" src="./img/Group 17 (1).svg" alt="Image 1">
+                    </div>
+                    <div class="carousel">
+                        <img class="carousel-image" src="./img/Group 5.svg" alt="Image 1">
+
+                        <img class="carousel-image" src="./img/Group 17 (2).svg" alt="Image 2">
+                    </div>
+                    <div class="carousel">
+                        <img class="carousel-image" src="./img/Group 2.svg" alt="Image 1">
+
+                        <img class="carousel-image" src="./img/Group 17.svg" alt="Image 3">
+                    </div>
+                    <div class="carousel">
+                        <img class="carousel-image" src="./img/Group 8.svg" alt="Image 3">
+
+                        <img class="carousel-image" src="./img/Group 8.svg" alt="Image 3">
+                    </div>
+                </div>
+                <button id="Lbtn" style="position: absolute; left:0; bottom: 70px; " onclick="prevImage()"><ion-icon
+                        name="chevron-back-sharp"></ion-icon></button>
+                <button id="btn" style="position: absolute; right:0; bottom: 70px; " onclick="nextImage()"><ion-icon
+                        name="chevron-forward-sharp"></ion-icon></button>
+            </div>
+
+        </section>
+
+        <section class="prefooter">
+            <div class="container">
+                <div class="prefooter__list">
+                    <ul style="display: flex; gap: 300px;">
+                        <li class="prefooter_li" style="margin-left: 20px;">
+                            <div class="prefooter__text">
+                                <p>Элегантный подарок на любой случай.</p>
+                            </div>
+                            <div class="prefooter__img">
+                                <p>На новый год</p>
+                                <p>Дарите незабываемые впечатления перед Новым годом.</p>
+                            </div>
+                        </li>
+                        <li class="prefooter_li">
+                            <div class="prefooter__text">
+                                <p>Автомобили всегда чистые и заправленные.</p>
+                            </div>
+                            <div class="prefooter__img" style="background: url(./img/image\ 3.svg);">
+                                <p>На Выходные</p>
+                                <p>Отличное дополнение для тех, кто ищет отдых.</p>
+                            </div>
+                        </li>
+                        <li class="prefooter_li">
+                            <div class="prefooter__img" style="background: url(./img/image\ 4.svg) ;height: 650px;">
+                                <p style="margin-top: 514px;">На день рождения</p>
+                                <p>Эксклюзивное сюрпризное предложение для юбиляра.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class='container'>
+            <div class="footer__main">
+                <div class="footer" style="display: flex;">
+                    <div class="">
+                        <div class="footer__text">
+                            <h1><img src="./img/LOGO YO.svg" alt=""></h1>
+                            <p>Аренда премиальных автомобилей в Москве</p>
+                        </div>
+                        <ul class="footer__wrapper">
+                            <a href="#">
+                                <li class="footer__list">
+                                    Автомобили
+                                </li>
+                            </a>
+                            <a href="#by_car">
+                                <li class="footer__list">
+                                    Покупка авто
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="footer__list">
+                                    Личная охрана
+                                </li>
+                            </a>
+                            <a href="#carousel">
+                                <li class="footer__list">
+                                    Клубные карты
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <aside>
+                        <p style="    display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        color: #FFFFFF99;
+                        ">Телефон</p>
+                        <div style="display: flex; align-items: center; gap: 46px;">
+                            <a href="tel:">+7 (000) 000-00-00</a>
+                            <div> <a href=""><img src="./img/ic_outline-telegram.svg" alt=""></a>
+                                <a href=""><img src="./img/mdi_instagram.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <p>Работаем круглосуточно</p>
+
+                        <p style="
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: left;
+                        color: #FFFFFF99;">Адрес</p>
+                        <h1 style="font-family: 'Eurostile Round Extended'; color: #FFFFFF;
+                        font-size: 18px;
+                        line-height: 28px;
+                        text-align: left;
+                        ">Москва, Проспект Вернадского 12д</h1>
+                    </aside>
+                </div>
+                <div class="" style="display: flex;">
+                    <div class="second__footer_wrapper">
+                        <div class="second__footer">
+                            <p style="margin-bottom: 35px;">Следите за нами</p>
+                            <div class="fLink">
+                                <a href="#" class="footer__link">
+                                    <div>
+                                        <img src="./img/ic_outline-telegram.svg" alt="">
+                                        <p style="margin-top: 58px;">Telegram</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <div>
+                                        <img src="./img/mdi_instagram.svg" alt="">
+                                        <p style="margin-top: 58px;">Instagram</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="" style="display: flex; padding: 52px 40px 50px 60px ; border-bottom: 1px solid #fff;">
+                        <div class="" style="display: flex; flex-direction: column; justify-content: space-between;">
+                            <h1 style="color: #FFFFFF;">ОСТАЛИСЬ ВОПРОСЫ ?</h1>
+                            <p style="
+                            font-size: 18px;
+                            line-height: 28px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            ">Отправьте заявку и наш эксперт свяжется с Вами в ближайшее время</p>
+                            <div class="">
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="tel" placeholder="Номер телефона">
+                            </div>
+                        </div>
+                        <div>
+                            <button style="color: #fff;" id="showPicturesButton">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul style="display: flex; justify-content: space-between; padding: 30px 60px 38px 60px;">
+                    <li>
+                        <p>
+                            LOGO yO all Rights
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Политика конфиденциальности
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Дизайн и разработка - AA
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
